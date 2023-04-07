@@ -1,0 +1,160 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 6, 2023, 3:16:50 AM
+    Author     : Xian & Andrei
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  color: black;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url(https://wallpapercave.com/wp/wp3259603.jpg);
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  background: linear-gradient(90deg, rgba(231,27,27,0.227328431372549) 0%, rgba(173,49,108,0.26934523809523814) 35%, rgba(214,231,134,0.2805497198879552) 64%, rgba(194,194,194,0.7035189075630253) 100%);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  filter: blur(0px);
+
+
+  
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  color: white ;
+}
+.details {
+    color: white ;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 200px;
+  border-radius: 5px;
+  
+
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  background: linear-gradient(96deg, rgba(200,49,49,1) 0%, rgba(201,80,97,1) 28%, rgba(203,194,113,1) 66%, rgba(255,125,125,1) 100%);
+
+
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(90deg, rgba(231,27,27,0.3477766106442577) 0%, rgba(173,49,108,0.26934523809523814) 35%, rgba(214,231,134,0.2805497198879552) 64%, rgba(205,205,205,0.7091211484593838) 100%);
+  }
+  
+ form .button1{
+   height: 35px;
+   margin: 25px;
+  text-align: center;
+ }
+ 
+ form .button1 input{
+   height: 100%;
+   width: 25%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  background: linear-gradient(96deg, rgba(200,49,49,1) 0%, rgba(201,80,97,1) 28%, rgba(203,194,113,1) 66%, rgba(255,125,125,1) 100%);
+
+
+ }
+ form .button1 input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(90deg, rgba(231,27,27,0.3477766106442577) 0%, rgba(173,49,108,0.26934523809523814) 35%, rgba(214,231,134,0.2805497198879552) 64%, rgba(205,205,205,0.7091211484593838) 100%);
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+ 
